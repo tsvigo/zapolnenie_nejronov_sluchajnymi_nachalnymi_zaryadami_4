@@ -1,0 +1,1 @@
+# zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4
