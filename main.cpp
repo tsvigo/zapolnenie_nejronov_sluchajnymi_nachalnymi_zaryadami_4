@@ -55,10 +55,12 @@ void Neyronnaya_sety::
   //
   //
   QString path =
-      "/home/viktor/my_projects_qt_2/"
-      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_Qt_"
-      "5_12_12_GCC_64bit-Debug/neyroni.txt"; // Файл с начальными зарядами
-                                             // нейронов//
+//      "/home/viktor/my_projects_qt_2/"
+//      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_Qt_"
+//      "5_12_12_GCC_64bit-Debug/neyroni.txt"; // Файл с начальными зарядами
+//                                             // нейронов//
+    "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+  
   //
   // QThread::sleep(2);
 
@@ -115,9 +117,12 @@ void Neyronnaya_sety::
   // Создаем объект класса QFile и связываем его с указанным именем
   //файла
   QString filename =
-      "/home/viktor/my_projects_qt_2/"
-      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_"
-      "Qt_5_12_12_GCC_64bit-Debug/neyroni.txt"; //
+//      "/home/viktor/my_projects_qt_2/"
+//      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_"
+//      "Qt_5_12_12_GCC_64bit-Debug/neyroni.txt"; //
+  
+  "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+  
   QFile file(filename);
   // Открываем файл в режиме "Только для записи"
   if (file.open(QIODevice::WriteOnly)) { // Если открыли файл начало
@@ -151,6 +156,7 @@ void Neyronnaya_sety::
   }
   //
   // Звук:
-  QProcess().execute("/home/viktor/Downloads/uvedomlen-korotkoe.mp3");
+  QProcess().execute("/home/viktor/my_scripts_2/zvuk.sh");
+  // /home/viktor/my_scripts_2/zvuk.sh
   // /home/viktor/Downloads/uvedomlen-korotkoe.mp3
 } // Конец функции
