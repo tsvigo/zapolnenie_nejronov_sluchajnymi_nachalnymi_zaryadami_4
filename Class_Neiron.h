@@ -22,7 +22,7 @@ public:
       unsigned long long
           Peremennaia_Zariad_Neirona //[
                                      // Peremennaia_Poriadkovyi_Nomer_Neirona];
-              [202]; // индекс это порядковый номер
+              [251]; // индекс это порядковый номер
                      // нейрона Переменная
                      // Изменение подстроечного
                      // заряда (веса) синапса:

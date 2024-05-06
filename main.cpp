@@ -21,7 +21,7 @@
 // /home/tsvigo/my_projects_qt_2/otlichenie_edinitcy_4_qmake_dialog/
 
 // глобальные переменные
-unsigned long long Neiron::Peremennaia_Zariad_Neirona[202] =
+unsigned long long Neiron::Peremennaia_Zariad_Neirona[251] =
     {}; // Определение переменной класса.
 QString s = "";
 QString file_suschestvuet = "";
@@ -59,7 +59,8 @@ void Neyronnaya_sety::
 //      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_Qt_"
 //      "5_12_12_GCC_64bit-Debug/neyroni.txt"; // Файл с начальными зарядами
 //                                             // нейронов//
-    "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+  //  "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+  "/home/viktor/my_projects_qt_2/zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4/neyroni.txt";
   
   //
   // QThread::sleep(2);
@@ -72,7 +73,7 @@ void Neyronnaya_sety::
   // Если файла нет
   // {
   // Цикл
-  for (int i = 0; i < 202; i++) { // начало цикла
+  for (int i = 0; i < 251; i++) { // начало цикла
     //
     int Peremennaia_Sluchainoe_Chislo =
 	  //   QRandomGenerator::global()->bounded(0,  // 9223372036854775807//
@@ -104,7 +105,7 @@ void Neyronnaya_sety::
         Peremennaia_Sluchainoe_Chislo; // i - номер нейрона по порядку
     //
     // Тут видимо добавить число в массив
-    int numbers_strings[203];
+    int numbers_strings[250];
 
     numbers_strings[i] = Neiron::Peremennaia_Zariad_Neirona[i];
     s = s.append(QString::number(numbers_strings[i]));
@@ -121,7 +122,8 @@ void Neyronnaya_sety::
 //      "build-zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4-Desktop_"
 //      "Qt_5_12_12_GCC_64bit-Debug/neyroni.txt"; //
   
-  "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+ // "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/neyroni.txt";
+ "/home/viktor/my_projects_qt_2/zapolnenie_nejronov_sluchajnymi_nachalnymi_zaryadami_4/neyroni.txt";
   
   QFile file(filename);
   // Открываем файл в режиме "Только для записи"
